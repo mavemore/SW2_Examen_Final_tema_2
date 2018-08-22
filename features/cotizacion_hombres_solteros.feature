@@ -52,3 +52,13 @@ Característica: Obtener cotización para clientes hombres solteros.
       Dado que el cliente tiene 5 dependientes 
       Cuando solicite la cotizacion 
       obtiene el mensaje No se puede realizar una cotización para el valor ingresado de dependientes.
+
+   Escenario: Hombre soltero de la ciudad de Guayaquil de 65 años con 0 dependientes con diabetes de pre-existencia 
+      Dado que la ciudad del cliente es Guayaquil
+      Dado que la edad del cliente es 65
+      Dado que el genero del cliente es hombre
+      Dado que el estado civil del cliente es soltero
+      Dado que el cliente tiene pre-existencia diabetes
+      Dado que el cliente tiene 0 dependientes 
+      Cuando solicite la cotizacion 
+      obtiene el mensaje El valor calculado de su cotización es de 80.00
