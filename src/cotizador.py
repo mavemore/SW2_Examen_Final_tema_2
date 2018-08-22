@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
+
 def calcular_cuota_basica(dependientes):
 	"""Calcula la cuota basica del asegurado, 
 	dependiendo de su numero de dependientes. 
