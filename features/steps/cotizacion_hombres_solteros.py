@@ -30,13 +30,8 @@ def step_impl(context, dependientes):
 
 @when("calcule el valor de la poliza")
 def step_impl(context):
-    resultado,mensaje = cotizar_seguro(context.ciudad, context.edad, context.sexo, context.estado_civil, context.especial, context.dependientes)
-    context.mensaje = mensaje
+    resultado = cotizar_seguro(context.ciudad, context.edad, context.sexo, context.estado_civil, context.especial, context.dependientes)
     context.resultado = resultado
 @then("Obtendrá un total de: {total}")
 def step_impl(context,total):
 	assert context.resultado == total
-
-@then("obtiene el mensaje '{mensaje}'")
-def step_impl(context, mensaje):
-	assert context.mensaje == mensaje
