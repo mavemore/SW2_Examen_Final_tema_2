@@ -33,3 +33,28 @@ Característica: Obtener cotización para clientes hombres solteros.
       Dada que un 'hombre' tiene 60 años ademas tiene 1 dependientes ademas es de 'Cuenca' ademas es 'soltero' ademas tiene 'infarto' condicion especial
       Cuando cotiza su seguro
       Entonces obtiene el mensaje 'El valor calculado de su cotización es de 110.00'
+
+  @hombres_solteros
+  Escenario: Un hombre de 20 años con 5 dependientes ni condicion especial, de Cuenca, solicita una cotizacion de seguro a Saludcita
+      Dada que un 'hombre' tiene 20 años ademas tiene 5 dependientes ademas es de 'Cuenca' ademas es 'soltero' ademas tiene 'ninguna' condicion especial
+      Cuando cotiza su seguro
+      Entonces obtiene el mensaje 'Solo se puede realizar la cotización para hasta 4 dependientes en línea.Por favor acérquese a la agencia y presente una solicitud.'
+
+
+  @hombres_solteros
+  Escenario: Un hombre de 60 años soltero con 0 dependiente con infarto, de Cuenca, solicita una cotizacion de seguro a Saludcita
+      Dada que un 'hombre' tiene 60 años ademas tiene 0 dependientes ademas es de 'Cuenca' ademas es 'soltero' ademas tiene 'infarto' condicion especial
+      Cuando cotiza su seguro
+      Entonces obtiene el mensaje 'El valor calculado de su cotización es de 80.00'
+
+  @hombres_solteros
+  Escenario: Un hombre de 60 años soltero con 0 dependiente con cancer, de Cuenca, solicita una cotizacion de seguro a Saludcita
+      Dada que un 'hombre' tiene 60 años ademas tiene 0 dependientes ademas es de 'Cuenca' ademas es 'soltero' ademas tiene 'cancer' condicion especial
+      Cuando cotiza su seguro
+      Entonces obtiene el mensaje 'El valor calculado de su cotización es de 80.00'
+
+  @hombres_solteros
+  Escenario: Un hombre de 60 años soltero con 0 dependiente con cancer, de Babahoyo, solicita una cotizacion de seguro a Saludcita
+      Dada que un 'hombre' tiene 60 años ademas tiene 0 dependientes ademas es de 'Babahoyo' ademas es 'soltero' ademas tiene 'cancer' condicion especial
+      Cuando cotiza su seguro
+      Entonces obtiene el mensaje 'Saludcita no opera en la ciudad ingresada.'
