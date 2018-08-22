@@ -25,25 +25,25 @@ def calcular_valores_adicionales(edad, sexo, estado_civil, especial):
     """
 	valor_adicional = 0
 	if edad >= 18 and edad <= 40:
-		if sexo == 'mujer':
-			if estado_civil == 'casado':
-				valor_adicional = 20
-			else:
-				valor_adicional = 10
+		if sexo == 'mujer':#
+			if estado_civil == 'casado':#
+				valor_adicional = 20#
+			else:#
+				valor_adicional = 10#
 		else:
 			if estado_civil == 'soltero':
 				valor_adicional = 40
 	elif edad >40 and edad<=60:
-		if sexo == 'mujer':
-			if especial == 'osteoporosis':
-				valor_adicional = 35
+		if sexo == 'mujer':#
+			if especial == 'osteoporosis':#
+				valor_adicional = 35#
 		else:
 			if especial == 'infarto':
 				valor_adicional = 50
 	elif edad >60:
 		if especial in ['cancer','diabetes']:
-			if sexo == 'mujer':
-				valor_adicional = 60
+			if sexo == 'mujer':#
+				valor_adicional = 60#
 			else:
 				valor_adicional = 50
 	return valor_adicional
@@ -64,8 +64,7 @@ def cotizar_seguro(ciudad, edad, sexo, estado_civil, especial, dependientes):
 			else:
 				resultado = "La edad ingresada no es válida. Debe de encontrarse entre 18 y 75 años."
 		elif dependientes <=9 and dependientes > 4:
-			resultado = "Solo se puede realizar la cotización para hasta 4 dependientes en línea. \
-			Por favor acérquese a la agencia y presente una solicitud."
+			resultado = "Solo se puede realizar la cotización para hasta 4 dependientes en línea. Por favor acérquese a la agencia y presente una solicitud."
 		else:
 			resultado = "No se puede realizar una cotización para el valor ingresado de dependientes."
 	else:
