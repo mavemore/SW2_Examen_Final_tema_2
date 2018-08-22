@@ -58,3 +58,21 @@ Característica: Obtener cotización para clientes hombres solteros.
       Dada que un 'hombre' tiene 60 años ademas tiene 0 dependientes ademas es de 'Babahoyo' ademas es 'soltero' ademas tiene 'cancer' condicion especial
       Cuando cotiza su seguro
       Entonces obtiene el mensaje 'Saludcita no opera en la ciudad ingresada.'
+
+  @hombres_solteros
+  Escenario: Un hombre adulto soltero, de 18 años con 2 dependientes sin condicion especial, de Cuenca, solicita una cotizacion de seguro a Saludcita
+      Dada que un 'hombre' tiene 18 años ademas tiene 2 dependientes ademas es de 'Cuenca' ademas es 'soltero' ademas tiene 'ninguna' condicion especial
+      Cuando cotiza su seguro
+      Entonces obtiene el mensaje 'El valor calculado de su cotización es de 130.00'
+
+  @hombres_solteros
+  Escenario: Un hombre adulto soltero, de 18 años con 3 dependientes sin condicion especial, de Cuenca, solicita una cotizacion de seguro a Saludcita
+      Dada que un 'hombre' tiene 18 años ademas tiene 3 dependientes ademas es de 'Cuenca' ademas es 'soltero' ademas tiene 'ninguna' condicion especial
+      Cuando cotiza su seguro
+      Entonces obtiene el mensaje 'El valor calculado de su cotización es de 140.00'
+
+ @hombres_solteros
+  Escenario: Un hombre adulto soltero, de 18 años con 4 dependientes sin condicion especial, de Cuenca, solicita una cotizacion de seguro a Saludcita
+      Dada que un 'hombre' tiene 18 años ademas tiene 4 dependientes ademas es de 'Cuenca' ademas es 'soltero' ademas tiene 'ninguna' condicion especial
+      Cuando cotiza su seguro
+      Entonces obtiene el mensaje 'El valor calculado de su cotización es de 160.00'
