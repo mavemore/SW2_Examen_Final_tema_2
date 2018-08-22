@@ -25,7 +25,3 @@ def step_impl(context,resultado):
 	are_equal = context.valor == resultado
 	assert are_equal is True
 
-@given("que un '{sexo}' tiene {edad} años")
-def step_impl(context,sexo,edad):
-	context.sexo = sexo
-	context.edad = edad
