@@ -4,9 +4,9 @@ from src.cotizador import *
 def before_scenario(context, scenario):
 	context = {}
 
-@given("un {sexo} de {edad} años que vive en '{ciudad}'' y su estado civil es '{estado_civil}'"
+@given("un '{sexo}' de {edad} años que vive en '{ciudad}' y su estado civil es '{estado_civil}'"
 	   ", con {dependientes} dependientes y padece '{especial}'")
-def step_impl(context, ciudad, dependientes, especial, ciudad, estado_civil, edad, sexo):
+def step_impl(context, ciudad, dependientes, especial, estado_civil, edad, sexo):
 	context.sexo = sexo
 	context.edad  = int(edad)
 	context.ciudad = ciudad
@@ -28,4 +28,4 @@ def step_impl(context):
 
 @then("Obtendrá el mensaje: '{mensaje}'")
 def step_impl(context, mensaje):
-	assert context.mensaje == mensaje
+	assert context.resultado == mensaje
