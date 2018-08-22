@@ -19,4 +19,4 @@ def step_impl(context):
 
 @then("--{total}--")
 def step_impl(context,total):
-	assert total == context.respuesta
+	assert context.respuesta == total 
